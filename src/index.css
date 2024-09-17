@@ -1,0 +1,37 @@
+:root {
+  font-size: 62.5%;
+  font-family: "DM Sans Variable", sans-serif;
+
+  /* Colors */
+  --purple-100: #dbd1fc;
+  --purple-500: #7551dc;
+  --yellow-100: #f9eee2;
+  --yellow-500: #ffcc6a;
+  --white: #ffffff;
+  --black: #121212;
+
+  /* Texts */
+  --font-family: "DM Sans Variable", sans-serif;
+
+  --text-preset-1: 6.2rem/93.5% var(--font-family);
+  --text-preset-2: 4rem/90% var(--font-family);
+  --text-preset-3: 3.2rem/87.5% var(--font-family);
+  --text-preset-4: 1.8rem/111% var(--font-family);
+
+  --ls-preset-1: -0.3rem;
+  --ls-preset-2: -0.2rem;
+  --ls-preset-3: -0.2rem;
+  --ls-preset-4: 0rem;
+
+  /* Spacing */
+  --s-500: 4rem;
+  --s-400: 3.2rem;
+  --s-300: 2.4rem;
+  --s-200: 1.6rem;
+  --s-100: 0.8rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
