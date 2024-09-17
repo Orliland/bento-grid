@@ -13,10 +13,10 @@
   /* Texts */
   --font-family: "DM Sans Variable", sans-serif;
 
-  --text-preset-1: 6.2rem/93.5% var(--font-family);
-  --text-preset-2: 4rem/90% var(--font-family);
-  --text-preset-3: 3.2rem/87.5% var(--font-family);
-  --text-preset-4: 1.8rem/111% var(--font-family);
+  --text-preset-1: 6.2rem/93.5% 500 var(--font-family);
+  --text-preset-2: 4rem/90% 500 var(--font-family);
+  --text-preset-3: 3.2rem/87.5% 500 var(--font-family);
+  --text-preset-4: 1.8rem/111% 400 var(--font-family);
 
   --ls-preset-1: -0.3rem;
   --ls-preset-2: -0.2rem;
