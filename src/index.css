@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 62.5%;
   font-family: "DM Sans Variable", sans-serif;
@@ -13,10 +19,10 @@
   /* Texts */
   --font-family: "DM Sans Variable", sans-serif;
 
-  --text-preset-1: 6.2rem/93.5% 500 var(--font-family);
-  --text-preset-2: 4rem/90% 500 var(--font-family);
-  --text-preset-3: 3.2rem/87.5% 500 var(--font-family);
-  --text-preset-4: 1.8rem/111% 400 var(--font-family);
+  --text-preset-1: 500 6.2rem/93.5% var(--font-family);
+  --text-preset-2: 500 3.2rem/2.8rem var(--font-family);
+  --text-preset-3: 500 2.6rem/2.4rem var(--font-family);
+  --text-preset-4: 400 1.8rem/111% var(--font-family);
 
   --ls-preset-1: -0.3rem;
   --ls-preset-2: -0.2rem;
@@ -32,6 +38,5 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #f6f5f6;
 }

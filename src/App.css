@@ -1,0 +1,302 @@
+.bento {
+  display: grid;
+  gap: var(--s-400);
+
+  padding-inline: var(--s-200);
+  padding-block: var(--s-300);
+}
+
+.card {
+  display: grid;
+
+  border-radius: 1rem;
+}
+
+.title {
+  font: var(--text-preset-1);
+  font-size: 4.6rem;
+  letter-spacing: var(--ls-preset-1);
+
+  color: var(--white);
+}
+
+.t-yellow-500 {
+  color: var(--yellow-500);
+}
+
+.card__title {
+  color: var(--white);
+
+  font: var(--text-preset-2);
+  letter-spacing: var(--ls-preset-2);
+  text-align: center;
+}
+
+.card__title--h1 {
+  color: var(--black);
+
+  font: var(--text-preset-1);
+  letter-spacing: var(--ls-preset-1);
+}
+
+.card__subtitle {
+  font: var(--text-preset-3);
+  letter-spacing: var(--ls-preset-3);
+}
+
+.card__text {
+  font: var(--text-preset-4);
+  letter-spacing: var(--ls-preset-4);
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card1 {
+  padding-inline: var(--s-400);
+  padding-block: var(--s-500);
+
+  background-color: var(--purple-500);
+
+  text-align: center;
+}
+
+.card1 img {
+  margin: var(--s-300) auto var(--s-100);
+  width: 19.2rem;
+}
+
+.card1 p {
+  font: var(--text-preset-4);
+  letter-spacing: var(--ls-preset-4);
+
+  color: var(--white);
+}
+
+.card2 {
+  gap: var(--s-200);
+
+  padding: var(--s-200);
+
+  background-color: var(--white);
+}
+
+.card3 {
+  overflow: hidden;
+
+  padding-inline: var(--s-200);
+  padding-top: var(--s-200);
+
+  background-color: var(--yellow-500);
+}
+
+.card3 img {
+  position: relative;
+  top: 2rem;
+  width: 60%;
+}
+
+.card4 {
+  gap: var(--s-300);
+
+  padding-inline: var(--s-200);
+  padding-block: var(--s-400);
+  background-color: var(--purple-100);
+
+  text-align: center;
+}
+
+.card5 {
+  gap: var(--s-500);
+
+  padding-inline: var(--s-500);
+  padding-block: var(--s-300);
+
+  background-color: var(--purple-500);
+}
+
+.card6 {
+  padding: var(--s-300);
+
+  background-color: var(--white);
+}
+
+.card6 .card__title,
+.card6 .card__text {
+  text-align: left;
+}
+
+.card6 .card__text {
+  margin-top: var(--s-200);
+  margin-bottom: var(--s-300);
+}
+
+.card6 .card__img {
+  width: 55%;
+}
+
+.card7 {
+  gap: var(--s-300);
+
+  padding: var(--s-400);
+  background-color: var(--yellow-100);
+}
+
+.card7 .card__title,
+.card8 .card__title {
+  color: var(--black);
+
+  text-align: left;
+}
+
+.card7 span {
+  color: var(--purple-500);
+
+  font-style: italic;
+}
+
+.card7 .card__img {
+  width: 70%;
+}
+
+.card8 {
+  gap: var(--s-300);
+  padding: var(--s-300);
+
+  background-color: var(--yellow-500);
+}
+
+.card8 .card__img {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .bento {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-400);
+
+    padding-inline: var(--s-500);
+    padding-block: 5.2rem;
+  }
+
+  .card1 {
+    grid-column: 1/3;
+    padding-inline: 8rem;
+    padding-block: 7.2rem;
+  }
+
+  .card2,
+  .card3 {
+    padding: var(--s-300);
+  }
+
+  .card3 img {
+    top: 2.4rem;
+    width: 60%;
+  }
+  .card4 {
+    grid-column: 1/3;
+  }
+
+  .card4 .card__img,
+  .card4 .card__text {
+    max-width: 35.7rem;
+    margin: 0 auto;
+  }
+  .card5 {
+    grid-column: 1/3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card5 .card__img {
+    width: 19.6rem;
+  }
+  .card5 .card__title {
+    width: 25.7rem;
+    text-align: left;
+  }
+  .card6 {
+    grid-column: 1/3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card6 .card__img {
+    width: 17.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bento {
+    margin: 8.3rem auto 6.5rem;
+    padding: 0;
+    max-width: 112rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      "grid7 grid1 grid1 grid4"
+      "grid7 grid1 grid1 grid4"
+      "grid7 grid2 grid3 grid4"
+      "grid8 grid2 grid3 grid4"
+      "grid8 grid6 grid5 grid5";
+  }
+
+  .card1 {
+    grid-area: grid1;
+  }
+  .card2 {
+    grid-area: grid2;
+  }
+  .card3 {
+    grid-area: grid3;
+  }
+  .card4 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    grid-area: grid4;
+    padding: var(--s-400);
+  }
+
+  .card4 .card__img {
+    position: relative;
+    height: 31.8rem;
+    width: auto;
+  }
+
+  .card4 .card__text {
+    text-align: left;
+  }
+
+  .card5 {
+    grid-area: grid5;
+  }
+
+  .card5 .card__title,
+  .card5 .card__img {
+    width: 50%;
+    height: 100%;
+  }
+  .card6 {
+    flex-direction: column;
+    grid-area: grid6;
+  }
+  .card7 {
+    grid-area: grid7;
+  }
+
+  .card7 .card__img,
+  .card8 .card__img {
+    width: 100%;
+  }
+  .card8 {
+    grid-area: grid8;
+  }
+}
